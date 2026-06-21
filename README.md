@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+markdown_content_id = """# Website Portofolio Pribadi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portofolio pribadi yang modern, responsif, dan didesain dengan indah menggunakan React, TypeScript, Vite, dan Tailwind CSS. Proyek ini berfungsi sebagai etalase komprehensif untuk memamerkan keterampilan, pengalaman kerja, proyek, dan sertifikasi.
 
-Currently, two official plugins are available:
+## ✨ Fitur
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Bagian Hero:** Pengantar yang menarik dengan foto profesional dan tombol aksi (call-to-action) yang cepat.
+* **Tentang Saya:** Bagian detail yang menyoroti latar belakang, keterampilan, dan perjalanan pribadi.
+* **Linimasa Pengalaman:** Linimasa rapi yang menampilkan riwayat pekerjaan dan peran profesional.
+* **Galeri Proyek:** Pameran karya terbaru menggunakan tata letak kartu yang responsif.
+* **Sertifikasi:** Tampilan grid untuk sertifikat profesional yang telah diraih.
+* **Bagian Kontak:** Cara sederhana dan efektif bagi pengunjung untuk menghubungi.
+* **Sepenuhnya Responsif:** Dioptimalkan untuk tampilan yang mulus di perangkat desktop maupun seluler.
 
-## React Compiler
+## 🚀 Teknologi yang Digunakan
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Framework:** [React 18](https://react.dev/)
+* **Bahasa:** [TypeScript](https://www.typescriptlang.org/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 
-## Expanding the ESLint configuration
+## 📸 Tangkapan Layar
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Berikut adalah sekilas tentang antarmuka portofolio:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Bagian Hero | Bagian Tentang |
+| :---: | :---: |
+| <img src="./1_hero.png" width="400" alt="Hero Section"/> | <img src="./2_about.png" width="400" alt="About Section"/> |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Bagian Pengalaman | Bagian Footer / Bawah |
+| :---: | :---: |
+| <img src="./3_experience.png" width="400" alt="Experience Section"/> | <img src="./4_bottom.png" width="400" alt="Footer Section"/> |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Instalasi & Persiapan
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Ikuti petunjuk ini untuk menjalankan proyek secara lokal di komputer Anda.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prasyarat
+* Node.js (direkomendasikan v18 atau lebih baru)
+* npm atau yarn atau pnpm
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Langkah-langkah
+
+1.  **Kloning repositori**
+    ```
+```text?code_stdout&code_event_index=2
+README-v2.md
+
+```bash
+    git clone [https://github.com/taufik234/portofolio-1.git](https://github.com/taufik234/portofolio-1.git)
+    cd portofolio-1
+    ```
+
+2.  **Instal dependensi**
+    ```bash
+    npm install
+    # atau
+    yarn install
+    ```
+
+3.  **Jalankan server pengembangan**
+    ```bash
+    npm run dev
+    # atau
+    yarn dev
+    ```
+
+4.  **Buka di Browser**
+    Arahkan ke `http://localhost:5173` (atau port yang ditentukan di terminal Anda) pada web browser Anda.
+
+## 📦 Build untuk Produksi
+
+Untuk membuat versi build yang siap untuk produksi:
+
+```bash
+npm run build
+# atau
+yarn build
