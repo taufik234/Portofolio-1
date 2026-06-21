@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", sans-serif;
+
+  --color-yap: #FFE156;
+  --color-pink: #FF6B9A;
+  --color-cyan: #56E1FF;
+  --color-lime: #BFFF56;
+  --color-lavender: #C3B1FF;
+  --color-peach: #FFB085;
+  --color-ink: #1a1a1a;
+  --color-paper: #FAFAF5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* Neubrutalism shadow utility */
+.shadow-brutal {
+  box-shadow: 4px 4px 0px var(--color-ink);
+}
+
+.shadow-brutal-lg {
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+
+.shadow-brutal-sm {
+  box-shadow: 3px 3px 0px var(--color-ink);
+}
+
+.hover-shadow-brutal {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.hover-shadow-brutal:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+
+.hover-shadow-brutal:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--color-ink);
+}
