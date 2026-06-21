@@ -1,5 +1,3 @@
-markdown_content_id = """# Website Portofolio Pribadi
-
 Portofolio pribadi yang modern, responsif, dan didesain dengan indah menggunakan React, TypeScript, Vite, dan Tailwind CSS. Proyek ini berfungsi sebagai etalase komprehensif untuk memamerkan keterampilan, pengalaman kerja, proyek, dan sertifikasi.
 
 ## ✨ Fitur
