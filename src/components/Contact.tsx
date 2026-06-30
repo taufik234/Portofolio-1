@@ -65,7 +65,7 @@ export default function Contact() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/taufik-suryo-abintoro"
+                href="https://www.linkedin.com/in/taufik-suryo-abintoro-97a771301/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-3 rounded-xl border-3 border-ink bg-lavender shadow-brutal hover-shadow-brutal font-semibold text-ink transition-all"
